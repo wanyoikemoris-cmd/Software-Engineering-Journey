@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>ROSENFRANC DT SACCO Dashboard</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <div class="dashboard-container">
+
+    <div class="sidebar">
+
+      <h2>ROSENFRANC DT SACCO</h2>
+
+      <a href="#">Dashboard</a>
+
+      <a href="#">Members</a>
+
+      <a href="#">Savings</a>
+
+      <a href="#">Loans</a>
+
+      <a href="#">Reports</a>
+
+      <a href="#" id="settingsLink">Settings</a>
+
+      <button onclick="logout()" class="logout-btn">
+        Logout
+      </button>
+
+    </div>
+
+    <div class="main-content">
+
+      <h1 id="welcomeText"></h1>
+
+      <p>
+        SACCO ERP Dashboard System
+      </p>
+
+      <div class="card">
+
+        <h3>System Status</h3>
+
+        <p>✔ Login System Active</p>
+
+        <p>✔ Dashboard Active</p>
+
+        <p>✔ Role Authentication Active</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    // GET USER ROLE
+    let role = localStorage.getItem("role");
+
+    // WELCOME MESSAGE
+    document.getElementById("welcomeText").innerHTML =
+      "Welcome " + role;
+
+    // HIDE SETTINGS FOR NON-ADMINS
+    if (role !== "admin") {
+
+      document.getElementById("settingsLink").style.display = "none";
+    }
+
+    // LOGOUT FUNCTION
+    function logout() {
+
+      localStorage.removeItem("role");
+
+      window.location.href = "login.html";
+    }
+
+  </script>
+<script src="js/auth.js"></script>
+
+<script>
+    protectPage(["admin", "teller", "officer"]);
+</script>
+</body>
+
+</html>

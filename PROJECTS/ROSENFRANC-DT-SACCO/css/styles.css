@@ -1,0 +1,193 @@
+body {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, hwb(249 4% 78% / 0.992), #22726e6b);
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.login-box {
+
+    background: white;
+
+    width: 350px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    text-align: center;
+}
+
+.login-box h1 {
+
+    color: #0b3d91;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+
+    color: gray;
+
+    margin-bottom: 25px;
+}
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+.login-box button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #0b3d91;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+.login-box button:hover {
+
+    background: #4fc3f7;
+
+    color: black;
+}
+.dashboard-container {
+
+    display: flex;
+
+    width: 100%;
+
+    height: 100vh;
+}
+
+.sidebar {
+
+    width: 250px;
+
+    background: #0b3d91;
+
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.sidebar h2 {
+
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+
+    background: #4fc3f7;
+
+    color: black;
+}
+
+.main-content {
+
+    flex: 1;
+
+    background: #f4f7fb;
+
+    padding: 40px;
+}
+.demo-users {
+
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    color: gray;
+
+    line-height: 1.8;
+}
+.logout-btn {
+
+    margin-top: auto;
+
+    padding: 12px;
+
+    background: #aeea00;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    margin-top: 20px;
+}

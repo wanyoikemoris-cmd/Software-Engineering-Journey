@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Savings Module - ROSENFRANC DT SACCO</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f7fb;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0b3d91, #4fc3f7);
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    input, select, button {
+      padding: 10px;
+      margin: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    th {
+      background: #0b3d91;
+      color: white;
+    }
+
+    button {
+      background: #aeea00;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>SAVINGS MODULE</h2>
+</header>
+
+<div class="container">
+
+  <h3>Post Savings Transaction</h3>
+
+  <input type="text" id="memberId" placeholder="Member ID">
+
+  <select id="type">
+    <option value="Deposit">Deposit</option>
+    <option value="Withdrawal">Withdrawal</option>
+  </select>
+
+  <input type="number" id="amount" placeholder="Amount">
+
+  <button onclick="postTransaction()">Submit</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Member ID</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody id="savingsTable"></tbody>
+  </table>
+
+</div>
+
+<script src="../js/savings.js"></script>
+
+</body>
+</html>
